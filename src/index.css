@@ -56,7 +56,7 @@ button{
   box-shadow:  5px 5px 15px -5px rgba(0,0,0,0.3);
 }
 button:hover{
-  background-color: aqua;
+  background-color: #800200
 }
 ol{
   margin-top:30px;
@@ -98,7 +98,7 @@ ol li{
 } */
 @media(max-width:768px){
   .center_div{
-    width:55%;
+    width:75%;
   }
 
   .todo_style .fa-times{

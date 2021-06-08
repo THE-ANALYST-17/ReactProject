@@ -5,20 +5,33 @@ import ToDoList from "./ToDoList"
 const App=()=>{
   const [inputList,setInputList]=useState("");
   const[items,setItems]=useState([]);
+  // console.log(inputList);
   const itemEvent=(event)=>{
-    setInputList(event.target.value)
+   
+       setInputList(event.target.value)
+     
   }
+
+// console.log(inputList);
+
   const listOfItems=()=>{
+    if(inputList!==""){
     setItems((olditem)=>{
+      console.log(olditem);
       return [...olditem,inputList]
+      
     })
+    // console.log(items);
+  }
     setInputList("")
   }
+  // console.log(items);
   const deleteitem=(id)=>{
     console.log("delete");
 
     setItems((oldval)=>{
       return oldval.filter((e,index)=>{
+        //  console.log(e);
         return index!==id;
       })
     })
